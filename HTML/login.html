@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+</head>
+<body>
+    <p><image src="https://www.gdu.co.kr/images/main/logo.png" width="176px"></image></p>
+    <form action="login.html">
+        <div>
+            <label for="id">
+                <input type="text" placeholder="아이디" id="id">
+            </label>
+        </div>
+        <div>
+            <label for="pw">
+                <input type="password" placeholder="비밀번호" id="pw">
+            </label>
+   
+        </div>
+        <div>
+            <input type="button" value="로그인" onclick="location.href='board.html'">
+        </div>
+        <div>
+            <label for="autologin">
+                <input type="checkbox" id="autologin">자동 로그인 <!--라디오가 아니면 name 속성 필수 아님-->
+            </label>
+            <label for="passwords">
+                <input type="checkbox" id="passwords">비밀번호 저장
+            </label>
+        </div>
+    </form>
+</body>
+</html>
