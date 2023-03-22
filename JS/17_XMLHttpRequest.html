@@ -42,15 +42,15 @@
                         (2) Async(비동기) : true
     
             */
-           xhr.open('get', 'data.txt', true);
+            xhr.open('get', 'data.txt', true);
     
             /* 3. send - 요청하기 */
             xhr.send();
     
             /* 
                 4. 응답 처리하기 
-                 1) 응답되었는지 확인하기 위한 readystatechange 이벤트가 사용된다. 
-                 2) 응답 속성
+                1) 응답되었는지 확인하기 위한 readystatechange 이벤트가 사용된다. 
+                2) 응답 속성
                     (1) readyState - 통신 상태 확인 
                     ① 0 : OPENED
                     ② 1 : UNSEND
@@ -215,8 +215,8 @@
         });
     </script>
 
-     <!-- 연습2. book.json 읽어서 화면에 표시하기 -->
-     <div>
+    <!-- 연습2. book.json 읽어서 화면에 표시하기 -->
+    <div>
         <input type="button" id="btn_get_book" value="책정보가져오기">
         <table border="1">
             <thead>

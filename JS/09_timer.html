@@ -25,7 +25,7 @@
         }
 
         fnGetList() //4
-       
+    
 
         var f = function() { //익명함수는 선언함수와 달리 호이스팅이 안 된다. 그래서 순서가 맞아야 함. 
             alert('하하하');
@@ -40,7 +40,7 @@
         }
 
         f();
-      
+    
 
         function fnGetList(data) { //매개변수 선언시 변수 키워드 기재 안 함. (var 등) call back 함수 
             data();
@@ -108,21 +108,21 @@
     <script> 
         /*
 
-         function ex(){  
+        function ex(){  
             console.log('하하하');
             ex(); // 재귀 호출, 자기가 자기를 부르는 호출 방식, 반복적으로 할 때 사용 (recursive call)
         }
 
         ex();
-         재귀 호출 예시 : factorial 구하기(5! = 5*4*3*2*1)
-         5! = 5 * 4! fnFactorial(5) = 5 * fnFactorial(4)
-         4! = 4 * 3! fnFactorial(4) = 4 * fnFactorial(3)
-         3! = 3 * 2! fnFactorial(3) = 3 * fnFactorial(2)
-         2! = 2 * 1! fnFactorial(2) = 2 * fnFactorial(1)
-         1! = 1      fnFactorial(1) = 1 
-         -------------------------------------------------
+        재귀 호출 예시 : factorial 구하기(5! = 5*4*3*2*1)
+        5! = 5 * 4! fnFactorial(5) = 5 * fnFactorial(4)
+        4! = 4 * 3! fnFactorial(4) = 4 * fnFactorial(3)
+        3! = 3 * 2! fnFactorial(3) = 3 * fnFactorial(2)
+        2! = 2 * 1! fnFactorial(2) = 2 * fnFactorial(1)
+        1! = 1      fnFactorial(1) = 1 
+        -------------------------------------------------
                     fnFactorial(n) = n * fnFactorial(n-1); 
-         
+        
         */
 
         function fnFactorial(n){

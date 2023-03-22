@@ -29,7 +29,7 @@
 
         */
                //객체 생성하기 
-               var obj = { 
+            var obj = { 
                     'age': 30,
                     'name':'정숙',
                     'isAlive': true,
@@ -51,21 +51,21 @@
                }; //;는 붙여도 되고 안 붙여도 되고 디폴트는 붙이는 것  
 
                // 객체의 속성 (property) 확인하기 
-               console.log(obj.age, obj['age']);
-        console.log(obj.name, obj['name']);
-        console.log(obj.isAlive, obj['isAlive']);
-        console.log(obj.friend.name, obj.friend['name']);
-        console.log(obj['friend'].name, obj['friend']['name']);
-        console.log(obj.friend.phone, obj.friend['phone']);
-        console.log(obj['friend'].phone, obj['friend']['phone']);
-        for(let i = 0; i < obj.hobbies.length; i++){
-            console.log(obj.hobbies[i]);
-        }
-        for(let i = 0; i < obj['hobbies'].length; i++){
-            console.log(obj['hobbies'][i]);
-        }
-        (obj.info)();
-        (obj['info'])();
+                console.log(obj.age, obj['age']);
+                console.log(obj.name, obj['name']);
+                console.log(obj.isAlive, obj['isAlive']);
+                console.log(obj.friend.name, obj.friend['name']);
+                console.log(obj['friend'].name, obj['friend']['name']);
+                console.log(obj.friend.phone, obj.friend['phone']);
+                console.log(obj['friend'].phone, obj['friend']['phone']);
+                for(let i = 0; i < obj.hobbies.length; i++){
+                    console.log(obj.hobbies[i]);
+                }
+                for(let i = 0; i < obj['hobbies'].length; i++){
+                    console.log(obj['hobbies'][i]);
+                }
+                (obj.info)();
+                (obj['info'])();
 
     </script>
 
