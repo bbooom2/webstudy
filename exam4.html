@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="frm" action="https://search.naver.com/search.naver">
+        <input type="text" name="query" id="query">
+        <input type="button" value="네이버검색" id="btn">
+    </form>
+    <script>
+        var query = document.getElementById('query'); 
+        var frm = document.getElementById('frm');
+        var btn = document.getElementById('btn');
+        btn.onclick = function(event){
+            if(query.value == '') {
+                return;
+            }
+            alert('검색어는 ' + document.getElementById('query'.value + '입니다.'));
+            frm.submit();
+        }
+    </script>
+</body>
+</html>
+

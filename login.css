@@ -1,0 +1,104 @@
+
+* {
+    outline: none;
+}
+.wrap {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Malgun Gothic', sans-serif;
+    
+}
+
+header a {
+    display: flex;
+    justify-content: center;
+    margin: 80px;
+}
+
+body {
+    background-color: #F5F6F7;
+}
+
+section {
+    font-size: 13px;
+    text-align: center;
+}
+
+section div strong {
+    margin-left: -9%;
+}
+
+button {
+    width: 450px;
+    height: 50px;
+    background-color: #007700;
+    border : 2px solid #007700;
+    cursor: pointer;
+    color : #FFFFFF;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+input[id="sugangsang"] {
+    position : relative;
+    top: 1px;
+    left: 6px;
+    margin-left: -10px;
+}
+
+input[id="ilban"] {
+    position : relative;
+    top: 1px;
+    left: 6px;
+    margin-left: -10px;
+}
+
+input:not([type=radio]){
+    width : 430px;
+    height: 40px;
+    border : 3px solid #007700;
+    margin-top: 5px;
+    padding: 5px 10px; 
+    font-size: 15px;
+}
+
+input:focus {
+    border: solid 2px #FF8800;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer a {
+
+    text-decoration: none;
+    color: #000000;
+    background-color: #007777;
+    padding : 15px 27px;
+    display: inline-block;
+    width: 160px;
+
+}
+
+footer div a {
+    color : #FFFFFF;
+
+}
+
+footer div strong {
+    color:#000000;
+    font-size: 13px;
+}
+
+footer p {
+    color: #3a433abc;
+    font-size: 11px;
+    padding-inline: 15px 10px;
+
+}
