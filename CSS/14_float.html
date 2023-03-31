@@ -22,8 +22,6 @@
         }
         .wrap1 > .box1 {
             float: left;
-            
-
         }
         .wrap1 > .box2 {
             float:right;
@@ -32,98 +30,32 @@
     <div class="wrap1">
         <div class="box1">BOX1</div>
         <div class="box2">BOX2</div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula consequat elit a ultrices. Nulla rutrum ex erat. Aenean vulputate posuere venenatis. Aliquam ultricies fermentum tellus, ut fringilla felis pretium eu. Pellentesque eget porttitor massa. Mauris id felis quam. Vestibulum imperdiet est vel ultrices lobortis. Quisque finibus rhoncus ullamcorper. Mauris eleifend vulputate nisl quis euismod. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec molestie tempor ultricies. Morbi vitae elit vitae mauris lobortis volutpat vel sit amet purus. Praesent fringilla vel lorem quis accumsan.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae tincidunt risus. Vivamus cursus lectus vel dapibus aliquam. Vivamus sapien odio, varius rutrum egestas at, aliquet sed lacus. Morbi sem orci, imperdiet et lectus non, pharetra mattis enim. Nunc sagittis aliquam nisi ac iaculis. Nullam at lacinia augue. Maecenas nec tincidunt neque. Mauris efficitur dui id metus ultricies volutpat. Proin consectetur placerat laoreet. Integer commodo consequat neque, sit amet fermentum sapien varius accumsan. Aliquam mollis pellentesque pharetra. Etiam eu ante vel turpis ultricies consectetur et id nulla. Suspendisse faucibus ultricies mi nec luctus. Donec pharetra cursus mauris, id commodo nibh pellentesque in.
     </div>
-    <hr>
-    <style>
-        /* 
-        overflow 속성
-        -- 명령에 들어가는 콘텐츠가 넘칠 때 오버플로우라고 한다
-        1. 영역을 벗어난 컨텐츠에 적용되는 속성이다.
-        2. 영역을 벗어난 컨텐츠를 숨기거나 스크롤 처리한다. 
 
-        */
-        .wrap2 > div {
-            width: 100px;
-            height: 100px;
+    <hr>
+
+    <style>
+        .wrap2 > .left_box {
+            width: 400px;
+            height: 400px;
             border: 1px solid gray;
-            display: inline-block;
+            background: skyblue;
+            float: left;
         }
-        .wrap2 > .box1 {
-            overflow:hidden;
-        }
-        .wrap2 > .box2 {
-            overflow-x: scroll; /*가로 방향의 스크롤이 생긴다*/
-            overflow-y: scroll;/*세로 방향의 스크롤이 생긴다*/
-        }
-        .wrap2 > .box3 {
-            overflow: scroll;/*가로세로 방향의 스크롤이 생긴다*/
+        .wrap2 > .footer_box {
+            width: 800px;
+            height: 400px;
+            border: 1px solid gray;
+            background: aqua;
+            clear: left;  /* float: left; 영향에서 벗어나시오. (left, right, both) */
         }
     </style>
 
     <div class="wrap2">
-        <div class="box1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-        <div class="box2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-        <div class="box3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-    </div>
-
-    <hr>
-
-    <style>
-        /*
-            블록을 좌우로 배치하는 방법 -1(one true layout)
-            1. 부모 요소를 overflow: hidden; 처리한다.
-            2. 자식 요소를 float: left; (또는 float: right;) 처리한다. 
-        */
-        .wrap3 {
-            overflow: hidden;
-        }
-        .wrap3 > div {
-            width: 100px;
-            height: 100px;
-            border:1px solid gray;
-            float:left;
-        }
-    </style>
-    <div class="wrap3">
-        <div>BOX1</div>
-        <div>BOX2</div>
-    
-    </div>
-
-    <hr>
-
-    <style>
-        /*
-            블록을 좌우로 배치하는 방법 - 2
-            1. 부모 요소를 display: flex; 처리한다.
-            2. 그럼 끝.
-        */
-        div {
-            box-sizing: border-box;
-        }
-        .wrap4 {
-            display: flex;
-            flex-wrap: nowrap;      /* nowrap: 디폴트값, 부모 영역으로 자식들을 모두 모으는 방식, wrap: 자식들의 크기를 유지하기 때문에 부모 영역을 벗어날 수 있는 방식 */
-            flex-direction: row; /*row, row-reverse, column, column-reverse*/
-            justify-content: space-between; /*center, space-around, space-between*/
-            width: 600px;
-            height: 100px;
-            background-color: antiquewhite;
-        }
-        .wrap4 > div {
-            width: 100px;
-            height: 100px;
-            border: 1px solid gray;
-        }
-
-    </style>
-    <div class="wrap4">
-        <div>BOX1</div>
-        <div>BOX2</div>
-        <div>BOX3</div>
-        <div>BOX4</div>
-        <div>BOX5</div>
+        <div class="left_box">BOX1</div>
+        <div class="left_box">BOX2</div>
+        <div class="footer_box">BOX3</div>
     </div>
 
 </body>

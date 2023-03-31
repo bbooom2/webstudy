@@ -66,7 +66,7 @@
         width: 100px;
         height: 100px;
         border: 1px solid gray;
-        /* 변형(transform) 속성이 1초동안 이행(transition)*/
+        /* 변형(transform) 속성이 1초동안 이행(transition)되는 과정을 보겠다.*/
         transition-property: transform;
         transition-duration: 1s;
     }
@@ -84,16 +84,15 @@
         height: 50px;
         border: 1px solid gray;
         border-radius: 25px;
-         /* 변형(transform) 속성이 1초동안 이행(transition)되는 과정을 보겠다.*/
-         transition-property: transform;
-         transition-duration: 3s;
+        /* 변형(transform) 속성이 1초동안 이행(transition)되는 과정을 보겠다.*/
+        transition-property: transform;
+        transition-duration: 1s;
     }
     .box4:active {
         transform:  rotate(1080deg);
-       
-
     }
 </style>
-<div class="box4">BOX4</div>
+    <div class="box4">BOX4</div>
+
 </body>
 </html>
